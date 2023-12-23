@@ -5,13 +5,9 @@ public class Main {
         Calculator calc = Calculator.instance.get();
         int a = calc.plus.apply(1, 2);
         int b = calc.minus.apply(1, 1);
-        try {
-            int c = calc.devide.apply(a, b);
-            calc.println.accept(c);
-        } catch (ArithmeticException e) {
-            System.out.println("Попытка выполнить недопустимую арифметическую операцию");
-        }
-
+        int c = calc.devide.apply(a, b);
+        calc.println.accept(c);
+        
 
     }
 }
